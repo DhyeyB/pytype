@@ -3,5 +3,6 @@
     entry: pytype  # Path to your custom script that filters changed files
     language: python
     'types': [python]
+    args: ["--config=pytype.cfg",]
     require_serial: true
     additional_dependencies: []
