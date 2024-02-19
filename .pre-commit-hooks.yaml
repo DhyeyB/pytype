@@ -1,0 +1,7 @@
+-   id: pytype
+    name: pytype
+    entry: pytype.py  # Path to your custom script that filters changed files
+    language: python
+    'types': [python]
+    require_serial: true
+    additional_dependencies: []
