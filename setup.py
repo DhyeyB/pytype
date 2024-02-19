@@ -1,6 +1,6 @@
 import subprocess
 import sys
-import os
+from setuptools import setup
 
 def get_changed_files():
     try:
@@ -33,4 +33,12 @@ def main():
     run_pytype(changed_files)
 
 if __name__ == "__main__":
+    # Call main function when script is executed
     main()
+
+# Setup configuration
+setup(
+    name='pre_commit_pytype',
+    version='2023.5.8',
+    install_requires=['pytype==2023.5.8'],
+)
